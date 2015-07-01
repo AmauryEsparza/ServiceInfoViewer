@@ -2,4 +2,17 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <include android:id="@+id/component_name"
+        layout="@layout/item_service_detail_row"/>
+    <include android:id="@+id/process_name"
+        layout="@layout/item_service_detail_row"/>
+    <include android:id="@+id/pid"
+        layout="@layout/item_service_detail_row"/>
+    <include android:id="@+id/uid"
+        layout="@layout/item_service_detail_row"/>
+    <include android:id="@+id/connected_clients"
+        layout="@layout/item_service_detail_row"/>
+    <include android:id="@+id/active_time"
+        layout="@layout/item_service_detail_row"/>
+
 </TableLayout>
