@@ -1,6 +1,7 @@
 package com.example.amauryesparza.serviceinfoviewer;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,12 +14,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if(savedInstanceState == null){
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, new MainActivityFragment())
-                    .commit();
+            FragmentManager fragmentManager = this.getFragmentManager();
+            fragmentManager.beginTransaction().add(R.id.container, new MainActivityFragment()).commit();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
